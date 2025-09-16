@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String nombre = etNombre.getText().toString();
                 tvMensaje.setText("Hola "+nombre);
+                //yolo
             }
         });
 
