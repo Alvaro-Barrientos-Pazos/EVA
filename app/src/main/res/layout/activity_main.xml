@@ -20,16 +20,15 @@
         android:layout_height="46dp"
         android:hint="hint" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:text="Button" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <Button
+            android:id="@+id/bSaludar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Button" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>

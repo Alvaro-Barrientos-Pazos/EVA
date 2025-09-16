@@ -1,6 +1,7 @@
 package com.example.eva;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,8 +28,15 @@ public class MainActivity extends AppCompatActivity {
         EditText etNombre = findViewById(R.id.etNombre);
         TextView tvMensaje = findViewById(R.id.tvMensaje);
         Button bSaludar= findViewById(R.id.bSaludar);
-        String nombre = etNombre.getText().toString();
 
-        tvMensaje.setText("Hola "+nombre);
+        bSaludar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String nombre = etNombre.getText().toString();
+                tvMensaje.setText("Hola "+nombre);
+            }
+        });
+
+
     }
 }
