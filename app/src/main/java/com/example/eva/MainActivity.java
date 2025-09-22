@@ -1,10 +1,9 @@
 package com.example.eva;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button settingsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +26,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        EditText etNombre = findViewById(R.id.etNombre);
-        TextView tvMensaje = findViewById(R.id.tvMensaje);
-        Button bSaludar= findViewById(R.id.bSaludar);
+        settingsButton = findViewById(R.id.settingsButton);
 
-        bSaludar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String nombre = etNombre.getText().toString();
-                tvMensaje.setText("Hola "+nombre);
-                //yolo
-            }
+        settingsButton.setOnClickListener( v -> {
+            Intent intent = new Intent(MainActivity.this, SettingsMenu.class);
+            startActivity(intent);
         });
 
 

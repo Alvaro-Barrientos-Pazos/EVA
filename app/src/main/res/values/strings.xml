@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">EVA</string>
+    <string name="name">Nombre</string>
+    <string name="save">Guardar</string>
+    <string name="email">Correo</string>
+    <string name="age">Edad</string>
+    <string name="advertising">Recibir publicidad</string>
+    <string name="settingsSavedMsg">La configuración ha sido guardada</string>
+    <string name="appTitle">AppTitle</string>
+    <string name="settings">Opciones</string>
 </resources>
